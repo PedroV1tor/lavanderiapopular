@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,900;1,100;1,200;1,300;1,400&display=swap');
+@import url('//db.onlinewebfonts.com/c/ea250342ec4016561ba9e791c2f39c11?family=Posterama');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cabecalho {
+    position: relative;
+}
+
+.container__cabecalho {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 2px solid rgb(182, 182, 182);
+    position: fixed;
+    z-index: 2;
+}
+
+.cabecalho__bordaesquerda {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+.cabecalho__bordadireita {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+.cabecalho__logo {
+    padding-left: 180px;
+    height: 110px;
+}
+
+.cabecalho__titulo>h1 {
+    font-family: 'Posterama', sans-serif;
+    font-size: 47px;
+    font-weight: 400;
+    color: #153478;
+    border-radius: 20%;
+    padding: 30px;
+}
+
+.cabecalho__titulo>h1 span {
+    color: #d7af53;
+}
+
+.cabecalho__titulo ul {
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+    color: rgb(21, 112, 203);
+    font-weight: 500;
+    justify-content: center;
+}
+
+.cabecalho__titulo li {
+    text-transform: uppercase;
+}
+
+.container__redes {
+    display: flex;
+    gap: 0 8px;
+    padding-right: 180px;
+}
+
+.container__redes img {
+    height: 40px;
+    transition: transform 700ms;
+}
+
+.container__redes img:hover {
+    transform: scale(1.2);
+}
+
+.section {
+    display: flex;
+    justify-content: left;
+    padding: 100px 24px 0;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    width: 70vw;
+    border-left: 4px solid black;
+    padding-left: 25px;
+    margin-left: 50px;
+}
+
+.introducao {
+    padding-top: 300px;
+}
+
+.container__introducao a {
+    width: 100px;
+    background-color: #d7af53;
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    transition: transform 1s, background 0.5s;
+}
+
+.container__introducao a:hover {
+    background-color: #d9ba72;
+    transform: scale(1.02);
+}
+
+.section h2 {
+    font-size: 70px;
+    font-weight: 600;
+    color: rgb(21, 112, 203);
+}
+
+.container p {
+    text-align: justify;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.imagem-fundo {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.imagem-fundo img {
+    width: 100%;
+}
+
+.precos {
+    padding-bottom: 100px;
+}
+
+.precos__card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.precos__card h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.precos__card .precos__valor {
+    font-size: 24px;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.precos__card p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+.avaliacao {
+    background-color: #73b1f3;
+    display: flex;
+    flex-direction: column;
+}
+
+.avaliacao h2 {
+    margin-left: 50px;
+    padding-left: 20px;   
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-left: 4px solid black;
+    font-style: black;
+    font-size: 70px;
+}
+
+.swiper {
+    width: 1100px;
+    height: 300px;
+}
+
+.swiper-slide {
+
+    text-align: justify;
+    font-size: 30px;
+    padding: 0 60px;
+}
+
+.loc {
+    display: flex;
+    font-style: black;
+    background-color: #73b1f3;
+}
+
+.texto_loc p {
+    margin-left: 30px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-left: 4px solid black;
+    font-style: black;
+    font-size: 50px;
+}
+
+.imagem_frente_lavanderia img {
+    height: 500px;
+}
+
+.imagem_frente_lavanderia h2 {
+    border-left: 4px solid black;
+    
+}
+
+
+@media screen and (min-width: 425px) {
+    .cabecalho__bordadireita {
+        right: 0;
+    }
+    
+    .cabecalho__titulo>h1 {
+        width: 100px;
+    }
+}
